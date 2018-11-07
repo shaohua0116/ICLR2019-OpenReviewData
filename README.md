@@ -1,7 +1,7 @@
 # Crawl and Visualize ICLR 2019 OpenReview Data
 
 <p align="center">
-    <img src="asset/logo_wordcloud.png" width="640"/>
+    <img src="asset/logo_wordcloud.png" width="720"/>
 </p>
 
 ## Descriptions
@@ -13,7 +13,7 @@ This Jupyter Notebook contains the data and visualizations that are crawled ICLR
 
 The word clouds formed by keywords of submissions show the hot topics including **reinforcement learning**, **generative adversarial networks**, **generative models**, **imitation learning**, **representation learning**, etc.
 <p align="center">
-    <img src="asset/wordcloud.png" width="640"/>
+    <img src="asset/wordcloud.png" width="720"/>
 </p>
 
 This figure is plotted with python [word cloud generator](https://github.com/amueller/word_cloud) 
@@ -32,7 +32,7 @@ plt.show()
 The distributions of reviewer ratings center around 5 to 6 (mean: 5.15).
 
 <p align="center">
-    <img src="asset/rating.png" width="500"/>
+    <img src="asset/rating.png" width="640"/>
 </p>
 
 You can compute how many papers are beaten by yours with
@@ -52,13 +52,13 @@ print('Your papar beats {:.2f}% of submission '
 The top 50 common keywrods and their frequency.
 
 <p align="center">
-    <img src="asset/frequency.png" width="500"/>
+    <img src="asset/frequency.png" width="640"/>
 </p>
 
 The average reviewer ratings and the frequency of keywords indicate that to maximize your chance to get higher ratings would be using the keyowrds such as **theory**, **robustness**, or **graph neural network**.
 
 <p align="center">
-    <img src="asset/rating_frequency.png" width="500"/>
+    <img src="asset/rating_frequency.png" width="800"/>
 </p>
 
 ## How it works
@@ -83,7 +83,7 @@ browser.get(url)
 To know what content we can crawl, we will need to inspect the webpage layout.
 
 <p align="center">
-    <img src="asset/inspect.png" width="640"/>
+    <img src="asset/inspect.png" width="720"/>
 </p>
 
 I chose to get the content by

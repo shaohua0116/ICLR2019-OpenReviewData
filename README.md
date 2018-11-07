@@ -32,11 +32,7 @@ plt.show()
 The distributions of reviewer ratings center around 5 to 6 (mean: 5.15).
 
 <p align="center">
-
-```
-<img src="asset/rating.png" width="500"/>
-```
-
+    <img src="asset/rating.png" width="500"/>
 </p>
 
 You can compute how many papers are beaten by yours with
@@ -56,21 +52,13 @@ print('Your papar beats {:.2f}% of submission '
 The top 50 common keywrods and their frequency.
 
 <p align="center">
-
-```
-<img src="asset/frequency.png" width="500"/>
-```
-
+    <img src="asset/frequency.png" width="500"/>
 </p>
 
 The average reviewer ratings and the frequency of keywords indicate that to maximize your chance to get higher ratings would be using the keyowrds such as **theory**, **robustness**, or **graph neural network**.
 
 <p align="center">
-
-```
-<img src="asset/rating_frequency.png" width="500"/>
-```
-
+    <img src="asset/rating_frequency.png" width="500"/>
 </p>
 
 ## How it works
@@ -95,11 +83,7 @@ browser.get(url)
 To know what content we can crawl, we will need to inspect the webpage layout.
 
 <p align="center">
-
-```
-<img src="asset/inspect.png" width="640"/>
-```
-
+    <img src="asset/inspect.png" width="640"/>
 </p>
 
 I chose to get the content by

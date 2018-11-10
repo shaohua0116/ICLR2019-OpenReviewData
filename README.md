@@ -97,9 +97,9 @@ The data includes the abstract, keywords, TL; DR, comments.
 
 
 ## <a id="Data"></a>All ICLR 2019 OpenReview data
- Collected at 2018-11-10 04:51:11.802877
+ Collected at 2018-11-10 04:56:56.812276
 | Rank | Average Rating | Title | Ratings | Variance | 
-| ---- | -------------- | ----- | ------- | -------- | 
+| --- | --- | --- | --- | --- | 
 | 1 | 9.00 | Benchmarking Neural Network Robustness To Common Corruptions And Perturbations | 9 | 0.00 |
 | 2 | 8.67 | Exploration By Random Distillation | 9, 10, 7 | 1.25 |
 | 3 | 8.50 | Sparse Dictionary Learning By Dynamical Neural Networks | 9, 8 | 0.50 |

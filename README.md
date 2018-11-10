@@ -97,7 +97,8 @@ The data includes the abstract, keywords, TL; DR, comments.
 
 
 ## <a id="Data"></a>All ICLR 2019 OpenReview data
- Collected at 2018-11-10 04:56:56.812276
+Collected at 2018-11-10 04:59:20.847879
+
 | Rank | Average Rating | Title | Ratings | Variance | 
 | --- | --- | --- | --- | --- | 
 | 1 | 9.00 | Benchmarking Neural Network Robustness To Common Corruptions And Perturbations | 9 | 0.00 |

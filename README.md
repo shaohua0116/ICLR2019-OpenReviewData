@@ -71,6 +71,8 @@ The average reviewer ratings and the frequency of keywords indicate that to maxi
 
 ## How it works
 
+See [How to install Selenium and ChromeDriver on Ubuntu](#Install).
+
 To crawl data from dynamic websites such as OpenReview, a headless web simulator is created by
 
 ```
@@ -1686,3 +1688,57 @@ Collected at 2018-11-11 22:41:07.206976
 | 1575 | nan | [~~Scaling Up Deep Learning For Pde-based Models~~](https://openreview.net/forum?id=HJeEWnR9F7) |  | nan |
 | 1576 | nan | [~~Neural Network Bandit Learning By Last Layer Marginalization~~](https://openreview.net/forum?id=BklAyh05YQ) |  | nan |
 | 1577 | nan | [~~Exploration In Policy Mirror Descent~~](https://openreview.net/forum?id=B1gWWh05Y7) |  | nan |
+
+## <a id="Install"></a>Install Selenium and ChromeDriver on Ubuntu
+The following content is from a [post](https://christopher.su/2015/selenium-chromedriver-ubuntu/) by Christopher Su.
+
+- Install Google Chrome:
+
+```
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo dpkg -i google-chrome*.deb
+sudo apt-get install -f
+```
+
+- Install `xvfb` to run Chrome headlessly:
+
+```
+sudo apt-get install xvfb
+```
+
+- Install ChromeDriver
+
+```
+sudo apt-get install unzip
+
+wget -N http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+chmod +x chromedriver
+
+sudo mv -f chromedriver /usr/local/share/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+```
+
+- Install Selenium and pyvirtualdisplay
+
+```
+pip install pyvirtualdisplay selenium
+```
+
+- Test the setup
+
+```python
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(1024, 1024))
+display.start()
+
+
+from selenium import webdriver
+browser = webdriver.Chrome()
+browser.get('http://shaohua0116.github.io')
+print(browser.title)
+print(browser.find_element_by_class_name('bio').text)
+```

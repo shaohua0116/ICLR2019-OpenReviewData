@@ -155,7 +155,7 @@ from selenium import webdriver
 display = Display(visible=0, size=(1024, 1024))
 display.start()
 browser = webdriver.Chrome()
-browser.get('http://christopher.s://shaohua0116.github.io/')
+browser.get('http://shaohua0116.github.io/')
 print(browser.title)
 print(browser.find_element_by_class_name('bio').text)
 ```

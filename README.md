@@ -126,8 +126,7 @@ sudo apt-get install xvfb
 
 - Install ChromeDriver for 64-bit Linux
 
-
-``
+```
 sudo apt-get install unzip  # If you don't have unzip package
 
 wget -N http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
@@ -137,7 +136,8 @@ chmod +x chromedriver
 sudo mv -f chromedriver /usr/local/share/chromedriver
 sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
-``
+```
+
 If your systme is 32-bit, please find the ChromeDriver releases [here](http://chromedriver.storage.googleapis.com/) and modify the above download command.
 
 - Install Python dependencies (Selenium and pyvirtualdisplay)
@@ -148,7 +148,7 @@ pip install pyvirtualdisplay selenium
 
 - Test your setup in Python
 
-```
+```python
 from pyvirtualdisplay import Display
 from selenium import webdriver
 

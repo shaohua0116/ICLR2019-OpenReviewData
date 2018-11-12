@@ -105,6 +105,60 @@ value = browser.find_elements_by_class_name("note_content_value")
 
 The data includes the abstract, keywords, TL; DR, comments.
 
+## <a id="Install"></a>Installing Selenium and ChromeDriver on Ubuntu
+The following content is hugely borrowed from a nice [post](https://christopher.su/2015/selenium-chromedriver-ubuntu/) written by Christopher Su.
+
+- Install Google Chrome for Debian/Ubuntu
+
+```
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo dpkg -i google-chrome*.deb
+sudo apt-get install -f
+```
+
+- Install `xvfb` to run Chrome on a headless device
+
+```
+sudo apt-get install xvfb
+```
+
+- Install ChromeDriver for 64-bit Linux
+
+
+``
+sudo apt-get install unzip  # If you don't have unzip package
+
+wget -N http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+chmod +x chromedriver
+
+sudo mv -f chromedriver /usr/local/share/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+``
+If your systme is 32-bit, please find the ChromeDriver releases [here](http://chromedriver.storage.googleapis.com/) and modify the above download command.
+
+- Install Python dependencies (Selenium and pyvirtualdisplay)
+
+```
+pip install pyvirtualdisplay selenium
+```
+
+- Test your setup in Python
+
+```
+from pyvirtualdisplay import Display
+from selenium import webdriver
+
+display = Display(visible=0, size=(800, 600))
+display.start()
+browser = webdriver.Chrome()
+browser.get('http://christopher.su')
+print(browser.title)
+print(browser.find_element_by_class_name('bio').text)
+```
 
 ## <a id="Data"></a>All ICLR 2019 OpenReview data
 Collected at 2018-11-12 00:35:12.748871

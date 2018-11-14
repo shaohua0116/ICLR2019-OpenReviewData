@@ -63,7 +63,7 @@ The top 50 common keywrods and their frequency.
     <img src="asset/frequency.png" width="640"/>
 </p>
 
-The average reviewer ratings and the frequency of keywords indicate that to maximize your chance to get higher ratings would be using the keyowrds such as **theory**, **robustness**, or **graph neural network**.
+The average reviewer ratings and the frequency of keywords indicate that to maximize your chance to get higher ratings would be using the keywords such as **theory**, **robustness**, or **graph neural network**.
 
 <p align="center">
     <img src="asset/rating_frequency.png" width="800"/>

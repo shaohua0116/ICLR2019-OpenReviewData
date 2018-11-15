@@ -6,7 +6,7 @@
 
 ## Descriptions
 
-This Jupyter Notebook contains the data and visualizations that are crawled ICLR 2019 OpenReview webpages. As some are the reviews are still missing (11.3299\% by the time the data is crawled), the results might not be accurate.  All the crawled data (sorted by the average ratings) can be found [here](#Data).
+This Jupyter Notebook contains the data and visualizations that are crawled ICLR 2019 OpenReview webpages. As some are the reviews are still missing (1.0061%\% by the time the data is crawled), the results might not be accurate.  All the crawled data (sorted by the average ratings) can be found [here](#Data).
 
 ## Prerequisites
 

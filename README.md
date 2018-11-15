@@ -45,7 +45,7 @@ The distributions of reviewer ratings center around 5 to 6 (mean: 5.15).
 
 You can compute how many papers are beaten by yours with
 
-```
+```python
 def PR(rating_mean, your_rating):
     pr = np.sum(your_rating >= np.array(rating_mean))/len(rating_mean)*100
     return pr

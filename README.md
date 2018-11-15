@@ -49,7 +49,7 @@ You can compute how many papers are beaten by yours with
 def PR(rating_mean, your_rating):
     pr = np.sum(your_rating >= np.array(rating_mean))/len(rating_mean)*100
     return pr
-my_rating = (7+7+9)/3  # your average rating here
+my_rating = (5+6+7)/3  # your average rating here
 print('Your papar beats {:.2f}% of submission '
       '(well, jsut based on the ratings...)'.format(PR(rating_mean, my_rating)))
 # ICLR 2017: accept rate 39.1% (198/507) (15 orals and 183 posters)

@@ -26,7 +26,7 @@ The word clouds formed by keywords of submissions show the hot topics including 
 
 This figure is plotted with python [word cloud generator](https://github.com/amueller/word_cloud) 
 
-```
+```python
 from wordcloud import WordCloud
 wordcloud = WordCloud(max_font_size=64, max_words=160, 
                       width=1280, height=640,

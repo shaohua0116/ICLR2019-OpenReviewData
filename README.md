@@ -57,7 +57,7 @@ print('Your papar beats {:.2f}% of submission '
 # ICLR 2018: accept rate ?% (?/1580)
 ```
 
-The top 50 common keywrods and their frequency.
+The top 50 common keywords and their frequency.
 
 <p align="center">
     <img src="asset/frequency.png" width="640"/>
@@ -138,7 +138,7 @@ sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 ```
 
-If your systme is 32-bit, please find the ChromeDriver releases [here](http://chromedriver.storage.googleapis.com/) and modify the above download command.
+If your system is 32-bit, please find the ChromeDriver releases [here](http://chromedriver.storage.googleapis.com/) and modify the above download command.
 
 - Install Python dependencies (Selenium and pyvirtualdisplay)
 
@@ -163,7 +163,7 @@ print(browser.find_element_by_class_name('bio').text)
 ## <a id="Data"></a>All ICLR 2019 OpenReview data
 Collected at 2018-12-11 15:50:34.963419
 
-Number of submissions: 1579 (withdrwan submissions: 156)
+Number of submissions: 1579 (withdrawn submissions: 156)
 
 | Rank | Average Rating | Title | Ratings | Variance | 
 | --- | --- | --- | --- | --- | 

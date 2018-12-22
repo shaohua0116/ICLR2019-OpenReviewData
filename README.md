@@ -9,7 +9,7 @@
 This Jupyter Notebook contains the data and visualizations that are crawled ICLR 2019 OpenReview webpages. All the crawled data (sorted by the average ratings) can be found [here](#Data). The accepted papers have an average rating of 6.611 and 4.716 for rejected papers. The distributions are plotted as follows. 
 
 <p align="center">
-    <img src="asset/decision.png" width="800"/>
+    <img src="asset/decision.jpg" width="800"/>
 </p>
 
 ## Prerequisites
